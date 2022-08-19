@@ -6,13 +6,12 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    gap: 5px;
     text-align: center;
 }
 
 .header {
     display: grid;
-    grid-column: 2 / 3;
+    grid-column: 3 / 4;
     padding: 10px;
 }
 
@@ -55,7 +54,7 @@
 
 .projects-title {
     position: absolute;
-    top: 40px;
+    top: 45px;
     text-align: left;
     font-size: 20px;
     margin: 40px;
@@ -65,7 +64,7 @@
     position: relative;
     top: 50px;
     align-self: center;
-    margin: 30px 20px 20px 40px;
+    margin: 30px 20px 0px 40px;
     height: 200px;
     background-color: #FFFFFF;
     color: black;
@@ -78,6 +77,37 @@
 }
 
 .c-text {
+    padding: 5px;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.announcements {
+    display: grid;
+    grid-template-columns: 200px;
+    grid-row-start: 2;
+    background-color: #bccbde;
+}
+
+.a-main-title {
+    position: absolute;
+    top: 45px;
+    font-size: 20px;
+    text-align: center;
+    margin: 40px;
+}
+
+.a-box {
+    position: relative;
+    top: 85px;
+}
+
+.a-title {
+    font-size: 18px;
+    text-align: center;
+}
+
+.a-text {
     padding: 5px;
     font-weight: normal;
     font-size: 14px;
