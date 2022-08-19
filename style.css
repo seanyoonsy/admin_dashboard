@@ -19,7 +19,7 @@ ul {
     list-style: none;
 }
 
-.body {
+body {
     height: 100vh;
     display: grid;
     grid-template-columns: 300px 1fr;
