@@ -1,4 +1,11 @@
-* {
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
     margin: 0;
     padding: 0;
 }
@@ -55,22 +62,6 @@ ul {
     display: flex;
     align-items: center;
     gap: 10px;
-}
-
-.menu {
-    align-self: center;
-    justify-self: end;
-}
-
-.menu ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.menu ul,
-.menu li {
-    font-size: 18px;
-    list-style-type: none;
 }
 
 .content {
