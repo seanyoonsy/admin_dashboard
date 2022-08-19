@@ -4,20 +4,22 @@
 }
 
 .body {
+    height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    text-align: center;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        'sidebar header'
+        'sidebar content';
 }
 
 .header {
-    display: grid;
-    grid-column: 3 / 4;
+    grid-area: header;
     padding: 10px;
 }
 
 .sidebar {
-    display: grid;
-    grid-row-start: 2;
+    grid-area: sidebar;
     gap: 15px;
     padding: 15px;
     font-size: 18px;
@@ -42,30 +44,38 @@
     list-style-type: none;
 }
 
-.projects {
+.content {
+    grid-area: content;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-template-rows: repeat(3, clamp(200px, 250px, 350px));
-    grid-column: 2 / 3;
-    grid-row-start: 2;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: min-content 1fr;
+    grid-template-areas:
+        'projects announcements'
+        'projects trending';
+    overflow: auto;
     gap: 5px;
     background-color: #bccbde;
 }
 
+.projects {
+    grid-area: projects;
+}
+
 .projects-title {
-    position: absolute;
-    top: 45px;
     text-align: left;
     font-size: 20px;
-    margin: 40px;
 }
   
+.projects .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 250px;
+    gap: 10px;
+}
+
 .projects .card {
-    position: relative;
-    top: 50px;
-    align-self: center;
-    margin: 30px 20px 0px 40px;
-    height: 200px;
+    display: flex;
+    flex-direction: column;
     background-color: #FFFFFF;
     color: black;
     text-align: center;
@@ -83,24 +93,16 @@
 }
 
 .announcements {
-    display: grid;
-    grid-template-columns: 200px;
-    grid-column: 3 / 4;
-    grid-row-start: 2;
-    background-color: #bccbde;
+    grid-area: announcements;
 }
 
 .a-main-title {
-    position: absolute;
-    top: 45px;
     font-size: 20px;
     text-align: center;
-    margin: 40px;
 }
 
 .a-box {
-    position: relative;
-    top: 85px;
+    
 }
 
 .a-title {
