@@ -89,9 +89,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 10px;
 }
 
+.account span {
+    font-size: 30px;
+}
+
+.account .picture {
+    margin: 0 15px 0 25px;
+}
+  
 .bottom {
     display: flex;
     justify-content: space-between;
