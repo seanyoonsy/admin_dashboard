@@ -81,7 +81,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-size: 22px;
+    font-size: 32px;
     font-weight: bold;
 }
 
@@ -105,6 +105,27 @@ body {
     align-items: center;
 }
 
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile .picture {
+    width: 75px;
+    height: 75px;
+}
+
+.profile .greeting {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+  
+.profile .name {
+    font-size: 26px;
+    font-weight: bold;
+}
+  
 .sidebar {
     grid-area: sidebar;
     gap: 15px;
