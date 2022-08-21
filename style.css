@@ -77,6 +77,21 @@ body {
     width: min(80%, 750px);
 }
 
+.header .account {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.account button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
 .bottom {
     display: flex;
     justify-content: space-between;
