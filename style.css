@@ -19,6 +19,14 @@ ul {
     list-style: none;
 }
 
+button {
+    border: none;
+    appearance: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
 body {
     height: 100vh;
     display: grid;
@@ -32,6 +40,18 @@ body {
 .header {
     grid-area: header;
     padding: 10px;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    margin-bottom: 25px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .sidebar {
