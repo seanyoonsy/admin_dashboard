@@ -269,3 +269,44 @@ body {
     font-size: 14px;
     padding: 5px;
 }
+
+.trending {
+    grid-area: trending;
+}
+
+.trend {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.t-main-title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.trend .account {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.trend .picture {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+  
+.trend .username {
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.trend-text {
+    font-size: 14px;
+    padding: 5px;
+}
