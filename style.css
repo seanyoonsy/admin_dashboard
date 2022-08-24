@@ -228,6 +228,20 @@ body {
     font-size: 16px;
 }
 
+.c-icons {
+    margin-top: auto;
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+.c-icons span {
+    font-size: 28px;
+    cursor: pointer;
+}
+
 .announcements {
     grid-area: announcements;
 }
